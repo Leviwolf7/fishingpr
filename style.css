@@ -1,0 +1,92 @@
+body {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-family: helvetica;
+    font-size: 22.5px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: gray;
+}
+
+.navegador {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: green;
+}
+
+.mapa {
+    float: left;
+    margin-top: 30pt;
+    margin-left: 15px;
+    padding: 10px;
+    list-style: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px black;
+}
+
+.mapa h2 {
+    text-align: center;
+}
+
+.mapa ul {
+    list-style:square;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 30pt;
+}
+
+.right-column {
+    float: right;
+    width: 70%;
+    padding: 10px;
+    margin-top: 30pt;
+    margin-right: 30pt;
+}
+
+.descripcion {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px black;
+    padding: 0 8px;
+    margin-right: 115pt;
+    margin-bottom: 70pt;
+}
+
+.descripcion h2 {
+    text-align: center;
+}
+
+img {
+    border-radius: 8px;
+}
+
+.img-contenedor {
+    background-color: gray;
+    margin-top: 500pt;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    gap: 140pt;
+    padding: 20px;
+    border-top: solid 4px goldenrod;
+    border-bottom: solid 4px goldenrod;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.img-contenedor img {
+    height: 150px;
+}
