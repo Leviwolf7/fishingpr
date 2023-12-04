@@ -3,35 +3,48 @@ body {
     padding: 0;
     font-family: helvetica;
     font-size: 22.5px;
+    background-color: #e5e5e5;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
+    color: #F3CD89;
     text-align: center;
-    padding: 20px;
-    background-color: gray;
+    padding: 2px;
+    background-color: #5E0001;
+    margin-top: -30px;
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
 }
 
 .navegador {
     display: grid;
     grid-template-columns: auto auto auto auto;
     list-style: none;
+    margin-top: -20px;
     
 }
 
 a {
     text-decoration: none;
-    color:black;
+    color: #FFFFFF;
 }
 
 a:hover {
     text-decoration: underline;
-    color: green;
+    color: #F3CD89;
 }
 
 .mapa {
+    background-color: #5E0001;
     float: left;
     margin-top: 30pt;
-    margin-left: 15px;
+    margin-left: 55px;
     padding: 10px;
     list-style: none;
     border-radius: 8px;
@@ -40,10 +53,11 @@ a:hover {
 
 .mapa h2 {
     text-align: center;
+    color: #F3CD89;
 }
 
 .mapa ul {
-    list-style:square;
+    list-style: none;
     padding-left: 20px;
     font-size: 20px;
     line-height: 30pt;
@@ -51,22 +65,31 @@ a:hover {
 
 .right-column {
     float: right;
-    width: 70%;
-    padding: 10px;
+    width: 60%;
     margin-top: 30pt;
-    margin-right: 30pt;
+    margin-right: 200px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 16px;
+    color: #F3CD89;
 }
 
-.descripcion {
-    border-radius: 8px;
-    box-shadow: 0 2px 8px black;
-    padding: 0 8px;
-    margin-right: 115pt;
-    margin-bottom: 70pt;
+.right-column div {
+    background-color: #304a29;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 6px;
+    padding: 15px;
 }
 
-.descripcion h2 {
+.right-column div:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.right-column div:nth-child(4) {
     text-align: center;
+    grid-column-start: -3;
+    grid-column-end: -1;
 }
 
 img {
@@ -74,19 +97,21 @@ img {
 }
 
 .img-contenedor {
-    background-color: gray;
-    margin-top: 500pt;
+    background-color: #304a29fd;
+    margin-top: 850pt;
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: center;
-    gap: 140pt;
-    padding: 20px;
-    border-top: solid 4px goldenrod;
-    border-bottom: solid 4px goldenrod;
+    gap: 150pt;
+    padding: 10px;
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
+    border-color: #5E0001;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 .img-contenedor img {
-    height: 150px;
+    height: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
 }
